@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "A simple edit tracking system to keep track of who changed a model."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "APACHE-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "APACHE-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 4.0.0"
