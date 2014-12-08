@@ -5,15 +5,15 @@ module Whodunnit
     end
 
     def created_by(e)
-      Edit.where(item: e, action: Edit.actions[:a_create]).first.by.presence rescue nil || '_Not found_'
+      Edit.where(item: e, action: Edit.actions[:a_create]).first.by.presence rescue nil || t('not_found')
     end
 
     def last_edit_at(e)
-      Edit.where(item: e).first.created_at rescue nil || '_Not found_'
+      Edit.where(item: e).first.created_at rescue nil || t('not_found')
     end
 
     def last_edit_by(e)
-      Edit.where(item: e).first.by.presence rescue nil || '_Not found_'
+      Edit.where(item: e).first.by.presence rescue nil || t('not_found')
     end
 
     def total_edits_on(e)
