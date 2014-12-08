@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/fletcher91/whodunnit"
   s.summary     = "A simple edit tracking system to keep track of who changed a model."
   s.description = "A simple edit tracking system to keep track of who changed a model."
-  s.license     = "MIT"
+  s.license     = "APACHE 2.0"
 
   s.files = Dir["{app,config,db,lib}/**/*", "APACHE-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
